@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+//function
+func functionSayHello() {
+	fmt.Println("Hello")
+}
+
 type Human struct {
 	Name string
 }
@@ -9,11 +14,6 @@ type Human struct {
 //method
 func (h Human) sayHello() {
 	fmt.Printf("Hello %s", h.Name)
-}
-
-//function
-func functionSayHello() {
-	fmt.Println("Hello")
 }
 
 func main() {

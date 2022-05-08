@@ -17,7 +17,10 @@ func main() {
 	order := Order{
 		Id:     12,
 		Number: "13",
-		Line:   []Line{{Id: 14}},
+		Line: []Line{
+			Line{Id: 14},
+			{Id: 13}, // if declaration has multiple line last line should end with a comma
+		},
 	}
 
 	fmt.Println(order.Id)
