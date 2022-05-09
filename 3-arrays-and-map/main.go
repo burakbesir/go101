@@ -21,6 +21,8 @@ func main() {
 
 	m := make(map[string]string)
 
+	//m2 := map[string]int {}
+
 	m["Hello"] = "World"
 
 	fmt.Println(m["Hello"])

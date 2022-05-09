@@ -1,9 +1,9 @@
 package service
 
 import (
-	"Go101/10-example/model"
-	"Go101/10-example/repository"
 	"fmt"
+	"github.com/rahmanbesir/go101/10-example/model"
+	"github.com/rahmanbesir/go101/10-example/repository"
 )
 
 type OrderService interface {

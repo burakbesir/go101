@@ -1,23 +1,21 @@
 package repository
 
 import (
-	"Go101/10-example/model"
 	"errors"
+	"github.com/rahmanbesir/go101/10-example/model"
 )
 
-// repository.NEwORderRepository
+// repository.NewOrderRepository
 
 type OrderRepository interface {
 	GetById(int64) (error, model.Order)
 }
 
 type orderRepository struct {
-
 }
 
 func NewOrderRepository() OrderRepository { // burada db için kullanacağımız paketi alıp initial edebiliriz
-	return &orderRepository{
-	}
+	return &orderRepository{}
 }
 
 func (r *orderRepository) GetById(id int64) (error, model.Order) {

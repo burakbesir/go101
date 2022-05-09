@@ -3,10 +3,12 @@ package main
 import "fmt"
 
 type Order struct {
-	Id     int
+	id     int
 	Number string
 	Line   []Line
 }
+
+//type ID int
 
 type Line struct {
 	Id int
@@ -15,7 +17,7 @@ type Line struct {
 func main() {
 
 	order := Order{
-		Id:     12,
+		id:     12,
 		Number: "13",
 		Line: []Line{
 			Line{Id: 14},
@@ -23,5 +25,5 @@ func main() {
 		},
 	}
 
-	fmt.Println(order.Id)
+	fmt.Println(order.id)
 }
